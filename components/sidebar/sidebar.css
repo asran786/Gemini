@@ -1,0 +1,133 @@
+.sidebar {
+    min-height: 90vh;
+    max-width: 300px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f4f9;
+    padding: 10px 20px 10px 20px;
+}
+
+.sidebar img {
+    width: 20px;
+}
+
+.sidebar .menu {
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.new-chat {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0 30px 0;
+    border-radius: 22px;
+    padding: 11px 15px;
+    font-size: 15px;
+    color: grey;
+    cursor: pointer;
+    background-color: #e2e6eb;
+}
+
+.new-chat img {
+    width: 15px;
+}
+
+.new-chat p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recent-entry p {
+    font-weight: 600;
+}
+
+.recent {
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px 0 20px 5px; */
+    padding-bottom: 20px;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.recent::-webkit-scrollbar {
+    display: none;
+}
+
+.recent p {
+    padding-left: 10px;
+}
+
+.recent-title {
+    margin-bottom: 10px;
+}
+
+.recent .recent-entry {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0 01px 0;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 22px;
+    font-size: 15px;
+    cursor: pointer;
+    max-width: 300px;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recent .recent-entry:hover {
+    background-color: #e2e6eb;
+}
+
+.new-chat:hover {}
+
+.top {
+    max-height: 60vh;
+}
+
+.bottom {
+    display: inline-flex;
+    flex-direction: column;
+    max-height: 30vh;
+    padding-top: 10px;
+}
+
+.bottom-item img {
+    width: 25px;
+}
+
+.bottom-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    border-radius: 22px;
+    padding: 8px 10px 8px 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.bottom-item:hover {
+    background-color: #e2e6eb;
+}
+
+@media (max-width: 1080px) {}
+
+@media (max-width: 768px) {}
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+}
